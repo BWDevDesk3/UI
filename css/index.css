@@ -225,12 +225,7 @@ hr {
 }
 @media (max-width:800px) {
   .main-container .the-team {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 1000vh;
+    height: 800vh;
   }
 }
 .main-container .the-team .team-member {
@@ -244,6 +239,11 @@ hr {
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width:800px) {
+  .main-container .the-team .team-member {
+    width: 100%;
+  }
 }
 .main-container .the-team .team-member .mug-shot {
   width: 18rem;
@@ -436,4 +436,10 @@ footer nav {
 }
 footer nav a {
   color: white;
+}
+.mug-shot {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  opacity: 0.5;
 }

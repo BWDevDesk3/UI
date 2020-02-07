@@ -12,9 +12,9 @@
     .the-team {
         height: 324vh;
         .display(flex, row, wrap, space-between, flex-start);
-        @media @tablet{
-            .display(flex, column, nowrap, space-between, center);
-            height:1000vh;
+         @media @tablet{
+            
+             height:800vh;
         }
         align-content: space-around;
         margin-bottom: 5rem;
@@ -28,6 +28,9 @@
             overflow: hidden;
 
             .display(flex, column, nowrap, space-evenly, center);
+            @media @tablet{
+                width:100%;
+            }
 
 
             .mug-shot {
@@ -213,4 +216,12 @@ footer {
 
     }
 
+}
+
+
+.mug-shot {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    opacity: 0.5;
 }
