@@ -1,0 +1,29 @@
+.nav-bar{
+    .display(flex, row, nowrap, space-between, center);
+    border-bottom: 1px solid @lambda-red;
+    margin-bottom: 4rem;
+    @media @tablet{
+        .display(flex, column, nowrap, space-around, center);
+        height:20vh;
+    }
+
+    .logo{
+        .display(flex, row, nowrap, flex-start, flex-start);
+        .txt(1.6rem, bold, @lambda-red, auto);
+        font-family: verdana, Impact;
+    }//logo.
+
+    nav{
+        .display(flex, row, nowrap, space-between, center);
+        .position(40%, 0);
+        @media @tablet{
+            width:100%;
+        }
+        
+        a{
+            font-family: 'Lato', sans-serif;
+            .txt(1rem, bold, @lambda-red, auto );
+        }//a.
+       
+    }//nav.
+}//nav-bar.

@@ -1,0 +1,231 @@
+.main-container {
+    .position(80%, auto);
+    padding-top: 1rem;
+    overflow: hidden;
+
+    h1 {
+        .txt(3rem, bolder, black, center);
+        font-family: verdana, impact;
+    }
+
+
+    .the-team {
+        height: 324vh;
+        .display(flex, row, wrap, space-between, flex-start);
+         @media @tablet{
+            
+             height:800vh;
+        }
+        align-content: space-around;
+        margin-bottom: 5rem;
+
+
+        .team-member {
+            width: 30%;
+            height: 100vh;
+            background-color: @pretty-salmon;
+            border-radius: 20px;
+            overflow: hidden;
+
+            .display(flex, column, nowrap, space-evenly, center);
+            @media @tablet{
+                width:100%;
+            }
+
+
+            .mug-shot {
+                width: 18rem;
+                height: 18rem;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+
+            .mug-shot:hover {
+                opacity: 1.0;
+            }
+
+            .role {
+                padding: 1rem;
+                background-color: black;
+                .txt(1.6rem, normal, white, center);
+                width: 100%;
+            }
+
+            .intro {
+                width: 80%;
+
+                h2 {
+                    line-height: 3;
+                    .txt(1.6rem, bolder, auto, center);
+                }
+
+                p{
+                    .txt(1.2rem, normal, auto, center);
+                }
+
+            }
+
+        }
+
+        .team-member:last-child {
+            margin: auto;
+        }
+
+    }
+
+    //End of about.htm styling.
+
+
+
+    
+
+    //start of service.html styling.
+
+
+    .top-content {
+        
+       
+        .display(flex, row, nowrap, space-between, center);
+        @media @tablet{
+            .display(flex, column, nowrap, space-around, center)
+        }
+
+        img{
+            width:50%;
+            @media @tablet{
+                width:100%;
+                margin-bottom:4rem;
+            }
+            
+        }
+
+        .our-service {
+            width: 44%;
+            @media @tablet{
+                width:100%;
+            }
+
+            
+
+            h2 {
+                .txt(2rem, normal, auto, auto);
+                letter-spacing: 0.1rem;
+                font-family: Impact, verdana;
+            }
+
+            p {
+                line-height: 1.5;
+                margin: 1rem 0;
+                .txt(1.2rem, normal, auto, left);
+            }
+
+        }
+
+    }
+
+    .middle-content {
+        margin: 5rem auto;
+        padding-bottom: 4rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        .txt(1.2rem, normal, auto, auto);
+        font-family: 'Lato', sans-serif;
+        @media @tablet{
+            .txt(1.2rem, normal, auto, center);
+        }
+
+        h2 {
+            .txt(2rem, bold, auto, center);
+            line-height: 3;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+    }
+
+
+    .bottom-content {
+        .display(flex, row, nowrap, space-around, stretch);
+        margin: 5rem auto;
+        @media @tablet{
+            .display(flex, column, nowrap, space-between, center);
+          
+            //   height:140vh;
+        }
+
+        .student,
+        .admin {
+            border: 2px black solid;
+            border-radius: 10px;
+            width: 40%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            background-color: @pretty-salmon;
+            @media @tablet{
+                width: 90%;
+                margin-bottom:4rem;
+            }
+
+            .ico {
+                .display(flex, column, nowrap, flex-start, center);
+                margin-bottom: 2rem;
+            }
+
+            .links {
+                line-height: 1.5;
+                margin-bottom: 1rem;
+
+                a {
+                    font-style: oblique;
+                    text-decoration: underline;
+                }
+
+            }
+
+            p {
+                line-height: 1.2;
+            }
+
+
+        }
+    }
+
+}
+
+footer {
+    margin-top: 5rem;
+    height: 30vh;
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    line-height: 4;
+
+    img {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        margin: 0.5rem;
+    }
+
+    nav {
+        .display(flex, row, nowrap, space-between, center);
+        .position(50%, auto);
+
+        a {
+            color: white;
+        }
+
+    }
+
+}
+
+
+.mug-shot {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    opacity: 0.5;
+}
